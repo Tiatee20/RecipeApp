@@ -47,8 +47,45 @@ def open_recipes_window(main_win):
             open_add_window3(win)
     win.close()
 
+def open_recipes_window2(main_win):
+    """Open a new window for each of the recipes."""
+    win = GraphWin("Recipes", 600, 600)
+    text = Text(Point(100, 100), "Recipes Window")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    pancake_button = Button(win, Point(250, 300), 50, 60, "Pancake")
+    sandwhich_button = Button(win, Point(250, 300), 50, 60, "Sandwhich")
+    spaghetti_button = Button(win, Point(250, 300), 50, 60, "Spaghetti")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+            return
+        elif pancake_button.clicked(p):
+            open_add_window4(win)
+        elif sandwhich_button.clicked(p):
+            open_add_window5(win)
+        elif spaghetti_button.clicked(p):
+            open_add_window6(win)
+    win.close()
+
+def open_add_window(main_win):
+    """Adds a new recipe."""
+    win = GraphWin("Add New Recipe", 400, 400)
+    text = Text(Point(100, 100), "Add New Recipes")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+
 def open_add_window1(main_win):
-    """Open a new window for breakfast recipes."""
+    """Adds a new window for breakfast recipes (pancake recipe)."""
     win = GraphWin("Add Breakfast Recipe", 400, 400)
     text = Text(Point(100, 100), "Add Breakfast Recipes")
     text.draw(win)
@@ -61,10 +98,10 @@ def open_add_window1(main_win):
         elif back_button.clicked(p):
             win.close()
         elif pancake_button.clicked(p):
-            open_add_window1(win)
+            open_add_window4(win)
 
 def open_add_window2(main_win):
-    """Open a new window for lunch recipes."""
+    """Adds a new window for lunch recipes (sandwhich recipe)."""
     win = GraphWin("Add Lunch Recipe", 400, 400)
     text = Text(Point(100, 100), "Add Lunch Recipes")
     text.draw(win)
@@ -77,10 +114,10 @@ def open_add_window2(main_win):
         elif back_button.clicked(p):
             win.close()
         elif sandwhich_button.clicked(p):
-            open_add_window2(win)
+            open_add_window5(win)
 
 def open_add_window3(main_win):
-    """Open a new window for dinner recipes."""
+    """Adds a new window for dinner recipes (sphaghetti recipe)."""
     win = GraphWin("Add Dinner Recipe", 400, 400)
     text = Text(Point(100, 100), "Add Dinner Recipes")
     text.draw(win)
@@ -93,7 +130,46 @@ def open_add_window3(main_win):
         elif back_button.clicked(p):
             win.close()
         elif spaghetti_button.clicked(p):
-            open_add_window3(win)
+            open_add_window6(win)
+
+def open_add_window4(main_win):
+    """Opens a new window for the pancake recipe."""
+    win = GraphWin("Add Breakfast Recipe", 400, 400)
+    text = Text(Point(100, 100), "Add Pancake Recipe")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+
+def open_add_window5(main_win):
+    """Opens a new window for the sandwhich recipe."""
+    win = GraphWin("Add Lunch Recipe", 400, 400)
+    text = Text(Point(100, 100), "Add Sandwhich Recipe")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+
+def open_add_window6(main_win):
+    """Opens a new window for the sphaghetti recipe."""
+    win = GraphWin("Add Breakfast Recipe", 400, 400)
+    text = Text(Point(100, 100), "Add Spaghetti Recipe")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
 
 def open_breakfast_recipes(main, win):
     """Opens a new window for the breakfast recipes."""
@@ -155,10 +231,69 @@ def open_dinner_recipes(main, win):
             open_add_window3(win)
     win.close()
 
+def open_pancake_recipe(main, win):
+    """Opens a window for the pancake recipe"""
+    win = GraphWin("Dinner Recipes", 600, 600)
+    text = Text(Point(100, 100), "Dinner Recipes Window")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    pancake_button = Button(win, Point(250, 300), 50, 60, "Pancake")
+    lunch_button = Button(win, Point(290, 350), 55, 60, "Lunch")
+    dinner_button = Button(win, Point(300, 400), 65, 80, "Dinner")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+            return
+        elif pancake_button.clicked(p):
+            open_add_window4(win)
+    win.close()
+
+def open_sandwhich_recipe(main, win):
+    """Opens a window for the sandwhich recipe"""
+    win = GraphWin("Dinner Recipes", 600, 600)
+    text = Text(Point(100, 100), "Dinner Recipes Window")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    pancake_button = Button(win, Point(250, 300), 50, 60, "Pancake")
+    lunch_button = Button(win, Point(290, 350), 55, 60, "Lunch")
+    dinner_button = Button(win, Point(300, 400), 65, 80, "Dinner")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+            return
+        elif sandwhich_button.clicked(p):
+            open_add_window5(win)
+    win.close()
+
+def open_spaghetti_recipe(main, win):
+    """Opens a window for the spaghetti recipe"""
+    win = GraphWin("Dinner Recipes", 600, 600)
+    text = Text(Point(100, 100), "Dinner Recipes Window")
+    text.draw(win)
+    back_button = Button(win, Point(100, 150), 40, 20, "Back")
+    pancake_button = Button(win, Point(250, 300), 50, 60, "Pancake")
+    lunch_button = Button(win, Point(290, 350), 55, 60, "Lunch")
+    dinner_button = Button(win, Point(300, 400), 65, 80, "Dinner")
+    while True:
+        p = win.getMouse()
+        if p is None:
+            break
+        elif back_button.clicked(p):
+            win.close()
+            return
+        elif spaghetti_button.clicked(p):
+            open_add_window6(win)
+    win.close()
 
 def main():
     # create the main window
-    win = GraphWin("My Window", 200, 200)
+    win = GraphWin("Recipe App", 400, 400)
 
     # create the buttons
     quit_button = Button(win, Point(50, 150), 40, 20, "Quit")
