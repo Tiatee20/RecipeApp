@@ -1,8 +1,8 @@
-Spaghetti and Meatballs:
-
-Ingredients:
-Meatballs:
-
+Spaghetti and Meatballs
+lunch
+1hr
+medium-meals,16-ingredients
+ingredients
 1 pound ground beef
 1/2 cup breadcrumbs
 1/4 cup grated Parmesan cheese
@@ -10,8 +10,7 @@ Meatballs:
 1 egg, beaten
 2 cloves garlic, minced
 Salt and pepper, to taste
-Sauce:
-
+Sauce
 2 tablespoons olive oil
 1 onion, chopped
 2 cloves garlic, minced
@@ -19,16 +18,13 @@ Sauce:
 1 teaspoon dried basil
 1 teaspoon dried oregano
 Salt and pepper, to taste
-Pasta:
-
 1 pound spaghetti
 Salt, for pasta water
-Instructions:
-
-1.Preheat oven to 400°F. Line a baking sheet with parchment paper.
-2.In a large bowl, combine ground beef, breadcrumbs, Parmesan cheese, parsley, egg, garlic, salt, and pepper. Mix well.
-3.Form mixture into 16-20 meatballs and place on prepared baking sheet. Bake for 20 minutes, or until browned and cooked through.
-4.Meanwhile, heat olive oil in a large pot over medium heat. Add onion and garlic and cook until softened, about 5 minutes.
-5.Add crushed tomatoes, basil, oregano, salt, and pepper. Bring to a simmer and let cook for 10-15 minutes.
-6.Cook spaghetti according to package directions in salted water until al dente. Drain and set aside.
-7.Serve spaghetti topped with meatballs and sauce.
+instructions
+Preheat oven to 400°F. Line a baking sheet with parchment paper.
+In a large bowl, combine ground beef, breadcrumbs, Parmesan cheese, parsley, egg, garlic, salt, and pepper. Mix well.
+Form mixture into 16-20 meatballs and place on prepared baking sheet. Bake for 20 minutes, or until browned and cooked through.
+Meanwhile, heat olive oil in a large pot over medium heat. Add onion and garlic and cook until softened, about 5 minutes.
+Add crushed tomatoes, basil, oregano, salt, and pepper. Bring to a simmer and let cook for 10-15 minutes.
+Cook spaghetti according to package directions in salted water until al dente. Drain and set aside.
+Serve spaghetti topped with meatballs and sauce.

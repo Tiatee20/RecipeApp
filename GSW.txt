@@ -1,7 +1,8 @@
 Greek Salad Wrap
-
-Ingredients:
-
+lunch
+20min
+easy-meals,11-ingredients
+ingredients
 2 large whole wheat tortillas
 2 cups mixed greens
 1 cup cherry tomatoes, halved
@@ -13,11 +14,10 @@ Ingredients:
 2 tbsp red wine vinegar
 1 tsp dried oregano
 Salt and pepper to taste
-Instructions:
-
-1.In a large bowl, mix together the mixed greens, cherry tomatoes, cucumber, red onion, feta cheese, and Kalamata olives.
-2.In a small bowl, whisk together the olive oil, red wine vinegar, dried oregano, salt, and pepper.
-3.Pour the dressing over the salad and toss to combine.
-4.Lay out the whole wheat tortillas and divide the salad mixture evenly between them.
-5.Wrap the tortillas tightly around the salad mixture, tucking in the sides as you go.
-6.Cut each wrap in half and serve.
+instructions
+In a large bowl, mix together the mixed greens, cherry tomatoes, cucumber, red onion, feta cheese, and Kalamata olives.
+In a small bowl, whisk together the olive oil, red wine vinegar, dried oregano, salt, and pepper.
+Pour the dressing over the salad and toss to combine.
+Lay out the whole wheat tortillas and divide the salad mixture evenly between them.
+Wrap the tortillas tightly around the salad mixture, tucking in the sides as you go.
+Cut each wrap in half and serve.
