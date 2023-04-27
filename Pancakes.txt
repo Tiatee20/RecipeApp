@@ -1,5 +1,7 @@
-Ingredients:
-
+Pancakes
+breakfast
+15m
+easy meals, 9-ingredients
 1 cup all-purpose flour
 2 tbsp sugar
 2 tsp baking powder
@@ -9,9 +11,7 @@ Ingredients:
 2 tbsp unsalted butter, melted
 1 tsp vanilla extract
 Cooking spray or additional butter for cooking
-
-Instructions:
-
+instructions
 1.In a large bowl, whisk together the flour, sugar, baking powder, and salt.
 2.In a separate bowl, whisk together the milk, egg, melted butter, and vanilla extract.
 3.Add the wet ingredients to the dry ingredients and whisk until just combined (there may be some lumps, that's okay).
