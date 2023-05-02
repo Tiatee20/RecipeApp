@@ -1,8 +1,10 @@
-Spaghetti and Meatballs:
+
+
+Meal: lunch
+Prep: 1hr
+Medium-meals, 16- ingredients
 
 Ingredients:
-Meatballs:
-
 1 pound ground beef
 1/2 cup breadcrumbs
 1/4 cup grated Parmesan cheese
@@ -11,7 +13,6 @@ Meatballs:
 2 cloves garlic, minced
 Salt and pepper, to taste
 Sauce:
-
 2 tablespoons olive oil
 1 onion, chopped
 2 cloves garlic, minced
@@ -19,13 +20,11 @@ Sauce:
 1 teaspoon dried basil
 1 teaspoon dried oregano
 Salt and pepper, to taste
-Pasta:
-
 1 pound spaghetti
 Salt, for pasta water
-Instructions:
 
-1.Preheat oven to 400°F. Line a baking sheet with parchment paper.
+Instructions:
+1.Preheat oven to 400F. Line a baking sheet with parchment paper.
 2.In a large bowl, combine ground beef, breadcrumbs, Parmesan cheese, parsley, egg, garlic, salt, and pepper. Mix well.
 3.Form mixture into 16-20 meatballs and place on prepared baking sheet. Bake for 20 minutes, or until browned and cooked through.
 4.Meanwhile, heat olive oil in a large pot over medium heat. Add onion and garlic and cook until softened, about 5 minutes.
