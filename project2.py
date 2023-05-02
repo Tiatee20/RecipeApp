@@ -13,7 +13,7 @@ class Button:
         p1 = Point(self.xmin, self.ymin)
         p2 = Point(self.xmax, self.ymax)
         self.rect = Rectangle(p1,p2)
-        self.rect.setFill('lightgray')
+        self.rect.setFill('light blue')
         self.rect.draw(win)
         self.label = Text(center, label)
         self.label.draw(win)
@@ -104,8 +104,8 @@ def open_lunch_window(main_win):
     win = GraphWin("Lunch Recipes", 200, 600)
     text = Text(Point(100, 50), "Lunch Recipes")
     text.draw(win)
-    pancake_button = Button(win, Point(100, 150), 155, 20, "Grilled Chicken Salad")
-    burrito_button = Button(win, Point(100, 250), 135, 20, "Greek Salad Wrap")
+    GCS_button = Button(win, Point(100, 150), 155, 20, "Grilled Chicken Salad")
+    GSW_button = Button(win, Point(100, 250), 135, 20, "Greek Salad Wrap")
     back_button = Button(win, Point(100, 500), 40, 20, "Back")
     while True:
         p = win.getMouse()
@@ -114,10 +114,40 @@ def open_lunch_window(main_win):
         elif back_button.clicked(p):
             win.close()
             return
-        elif pancake_button.clicked(p):
-            print("Pancake recipe")
-        elif burrito_button.clicked(p):
-            print("Breakfast burrito recipe")
+        elif GCS_button.clicked(p):
+            with open('GCS.txt', 'r') as f:
+                recipe = f.read()
+            recipe_window = GraphWin("Grilled Chicken Salad Recipe", 1100, 950)
+            recipe_text = Text(Point(475, 25), "Grilled Chicken Salad Recipe")
+            recipe_text.draw(recipe_window)
+            recipe_display = Text(Point(475, 300), recipe)
+            recipe_display.draw(recipe_window)
+            back_button_recipe = Button(recipe_window, Point(475, 625), 40, 20, "Back")
+            while True:
+                p = recipe_window.getMouse()
+                if p is None:
+                    break
+                elif back_button_recipe.clicked(p):
+                    recipe_window.close()
+                    break
+            recipe_window.close()
+        elif GSW_button.clicked(p):
+            with open('GSW.txt', 'r') as f:
+                recipe = f.read()
+            recipe_window = GraphWin("Greek Salad Wrap Recipe", 1100, 600)
+            recipe_text = Text(Point(550, 50), "Greek Salad Wrap Recipe")
+            recipe_text.draw(recipe_window)
+            recipe_display = Text(Point(550, 300), recipe)
+            recipe_display.draw(recipe_window)
+            back_button_recipe = Button(recipe_window, Point(550, 550), 40, 20, "Back")
+            while True:
+                p = recipe_window.getMouse()
+                if p is None:
+                    break
+                elif back_button_recipe.clicked(p):
+                    recipe_window.close()
+                    break
+            recipe_window.close()
     win.close()
 
 def open_dinner_window(main_win):
@@ -125,8 +155,8 @@ def open_dinner_window(main_win):
     win = GraphWin("Dinner Recipes", 250, 600)
     text = Text(Point(125, 50), "Dinner Recipes")
     text.draw(win)
-    pancake_button = Button(win, Point(125, 150), 175, 20, "Spaghetti and Meatballs")
-    burrito_button = Button(win, Point(125, 250), 225, 20, "Baked Salmon with Asparagus")
+    SMB_button = Button(win, Point(125, 150), 175, 20, "Spaghetti and Meatballs")
+    BSWA_button = Button(win, Point(125, 250), 225, 20, "Baked Salmon with Asparagus")
     back_button = Button(win, Point(125, 500), 40, 20, "Back")
     while True:
         p = win.getMouse()
@@ -135,10 +165,40 @@ def open_dinner_window(main_win):
         elif back_button.clicked(p):
             win.close()
             return
-        elif pancake_button.clicked(p):
-            print("Pancake recipe")
-        elif burrito_button.clicked(p):
-            print("Breakfast burrito recipe")
+        elif SMB_button.clicked(p):
+            with open('SMB.txt', 'r') as f:
+                recipe = f.read()
+            recipe_window = GraphWin("Spaghetti and Meatballs Recipe", 1000, 950)
+            recipe_text = Text(Point(455, 25), "Spaghetti and Meatballs Recipe")
+            recipe_text.draw(recipe_window)
+            recipe_display = Text(Point(455, 300), recipe)
+            recipe_display.draw(recipe_window)
+            back_button_recipe = Button(recipe_window, Point(455, 615), 40, 20, "Back")
+            while True:
+                p = recipe_window.getMouse()
+                if p is None:
+                    break
+                elif back_button_recipe.clicked(p):
+                    recipe_window.close()
+                    break
+            recipe_window.close()
+        elif BSWA_button.clicked(p):
+            with open('BSWA.txt', 'r') as f:
+                recipe = f.read()
+            recipe_window = GraphWin("Baked Salmon with Asparagus Recipe", 1100, 600)
+            recipe_text = Text(Point(550, 50), "Baked Salmon with Asparagus Recipe")
+            recipe_text.draw(recipe_window)
+            recipe_display = Text(Point(550, 300), recipe)
+            recipe_display.draw(recipe_window)
+            back_button_recipe = Button(recipe_window, Point(550, 575), 40, 20, "Back")
+            while True:
+                p = recipe_window.getMouse()
+                if p is None:
+                    break
+                elif back_button_recipe.clicked(p):
+                    recipe_window.close()
+                    break
+            recipe_window.close()
     win.close()
 
 def open_add_window(main_win):
@@ -164,8 +224,6 @@ def open_add_window(main_win):
         elif dinner_button.clicked(p):
             print("Dinner recipes")
     win.close()
-
-
 
 def main():
     # create the main window
