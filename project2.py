@@ -23,30 +23,36 @@ class Button:
         return (self.xmin <= p.getX() <= self.xmax and
                 self.ymin <= p.getY() <= self.ymax)
 
+class RecipesWindow:
+    def __init__(self, main_win):
+        self.win = GraphWin("Recipes", 200, 600)
+        self.text = Text(Point(100, 50), "Recipes Window")
+        self.text.draw(self.win)
+        self.breakfast_button = Button(self.win, Point(100, 150), 80, 20, "Breakfast")
+        self.lunch_button = Button(self.win, Point(100, 250), 80, 20, "Lunch")
+        self.dinner_button = Button(self.win, Point(100, 350), 80, 20, "Dinner")
+        self.back_button = Button(self.win, Point(100, 500), 40, 20, "Back")
+
+    def run(self):
+        while True:
+            p = self.win.getMouse()
+            if p is None:
+                break
+            elif self.back_button.clicked(p):
+                self.win.close()
+                return
+            elif self.breakfast_button.clicked(p):
+                open_breakfast_window(self.win)
+            elif self.lunch_button.clicked(p):
+                open_lunch_window(self.win)
+            elif self.dinner_button.clicked(p):
+                open_dinner_window(self.win)
+        self.win.close()
+
 def open_recipes_window(main_win):
     """Open a new window for the recipes."""
-    win = GraphWin("Recipes", 200, 600)
-    text = Text(Point(100, 50), "Recipes Window")
-    text.draw(win)
-    breakfast_button = Button(win, Point(100, 150), 80, 20, "Breakfast")
-    lunch_button = Button(win, Point(100, 250), 80, 20, "Lunch")
-    dinner_button = Button(win, Point(100, 350), 80, 20, "Dinner")
-    back_button = Button(win, Point(100, 500), 40, 20, "Back")
-    while True:
-        p = win.getMouse()
-        if p is None:
-            break
-        elif back_button.clicked(p):
-            win.close()
-            return
-        elif breakfast_button.clicked(p):
-            open_breakfast_window(win)
-        elif lunch_button.clicked(p):
-            open_lunch_window(win)
-        elif dinner_button.clicked(p):
-            open_dinner_window(win)
-    win.close()
-
+    recipes_window = RecipesWindow(main_win)
+    recipes_window.run()
 
 def open_breakfast_window(main_win):
     """Open a new window for breakfast themed recipes."""
