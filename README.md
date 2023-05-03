@@ -1,6 +1,6 @@
 # RecipeApp
 A recipe app used to find food inspiration
 
-#To-Do List
+# To-Do List
 
-#Pseudocode
+# Pseudocode
