@@ -56,23 +56,25 @@ def open_recipes_window(main_win):
 
 class OpenRecipes:
     def __init__(self, main_win):
-        win = GraphWin("Breakfast Recipes", 200, 600)
-        text = Text(Point(100, 50), "Breakfast Recipes")
-        text.draw(win)
-        pancake_button = Button(win, Point(100, 150), 80, 20, "Pancakes")
-        burrito_button = Button(win, Point(100, 250), 130, 20, "Breakfast Burritos")
-        back_button = Button(win, Point(100, 500), 40, 20, "Back")
+        self.win = GraphWin("Breakfast Recipes", 200, 600)
+        self.text = Text(Point(100, 50), "Breakfast Recipes")
+        self.text.draw(self.win)
+        self.pancake_button = Button(self.win, Point(100, 150), 80, 20, "Pancakes")
+        self.burrito_button = Button(self.win, Point(100, 250), 130, 20, "Breakfast Burritos")
+        self.back_button = Button(self.win, Point(100, 500), 40, 20, "Back")
+
 
 def breakfastWindow(main_win):
     """Open a new window for breakfast themed recipes."""
+    open_recipes = OpenRecipes(main_win)
     while True:
-        p = win.getMouse()
+        p = open_recipes.win.getMouse()
         if p is None:
             break
-        elif back_button.clicked(p):
-            win.close()
+        elif open_recipes.back_button.clicked(p):
+            open_recipes.win.close()
             return
-        elif pancake_button.clicked(p):
+        elif open_recipes.pancake_button.clicked(p):
             with open('Pancakes.txt', 'r') as f:
                 recipe = f.read()
             recipe_window = GraphWin("Pancake Recipe", 850, 600)
@@ -89,7 +91,7 @@ def breakfastWindow(main_win):
                     recipe_window.close()
                     break
             recipe_window.close()
-        elif burrito_button.clicked(p):
+        elif open_recipes.burrito_button.clicked(p):
             with open('BB.txt', 'r') as f:
                 recipe = f.read()
             recipe_window = GraphWin("Breakfast Burrito Recipe", 1100, 600)
@@ -106,7 +108,7 @@ def breakfastWindow(main_win):
                     recipe_window.close()
                     break
             recipe_window.close()
-    win.close()
+    open_recipes.win.close()
 
 def lunchWindow(main_win):
     """Open a new window for lunch themed recipes."""
