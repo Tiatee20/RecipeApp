@@ -3,16 +3,15 @@ A recipe app used to find food inspiration
 
 # To-Do List
 1. Create two recipes for each category 
-2. Create the Add button
-3. Create the app layout
-4. Create recipes button
-5. List title, ingredients, and directions for each recipe once a window is opened
-6. Make quit button
-7. Create categories breakfast, lunch, and dinner
-8. Make txt file for each recipe
-9. Make back button
-10. Create a separate window for each category
-11. Add images
+2. Create the app layout
+3. Create recipes button
+4. List title, ingredients, and directions for each recipe once a window is opened
+5. Make quit button
+6. Create categories breakfast, lunch, and dinner
+7. Make txt file for each recipe
+8. Make back button
+9. Create a separate window for each category
+10. Add images
 
 # Pseudocode
 from graphics import *
