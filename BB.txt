@@ -1,8 +1,8 @@
-Breakfast Burritos
-breakfast
-40m
-easy-meals,5-ingredients
-ingredients
+Meal: breakfast
+Prep: 40m
+Easy-meals, 5-ingredients
+
+Ingredients:
 4 large eggs
 2 tbsp milk
 Salt and pepper to taste
@@ -10,13 +10,14 @@ Salt and pepper to taste
 4 slices bacon, cooked and crumbled
 1/2 cup shredded cheddar cheese
 Salsa, avocado, or other toppings as desired
-instructions
-In a small bowl, whisk together the eggs, milk, salt, and pepper.
-Heat a nonstick skillet over medium heat and pour in the egg mixture.
-Cook, stirring occasionally, until the eggs are set but still moist, about 3-4 minutes.
-Remove the skillet from the heat and set aside.
-Warm the tortillas in the microwave or on a griddle until pliable.
-Divide the scrambled eggs, crumbled bacon, and shredded cheese evenly among the tortillas, placing the fillings in a line down the center of each tortilla.
-Add any additional toppings as desired, such as salsa or avocado.
-Fold in the sides of each tortilla and then roll up tightly, tucking in the ends as you go.
-Serve the breakfast burritos immediately, or wrap in foil and keep warm in a low oven until ready to serve.
+
+Instructions:
+1. In a small bowl, whisk together the eggs, milk, salt, and pepper.
+2. Heat a nonstick skillet over medium heat and pour in the egg mixture.
+3. Cook, stirring occasionally, until the eggs are set but still moist, about 3-4 minutes.
+4. Remove the skillet from the heat and set aside.
+5. Warm the tortillas in the microwave or on a griddle until pliable.
+6. Divide the scrambled eggs, crumbled bacon, and shredded cheese evenly among the tortillas, placing the fillings in a line down the center of each tortilla.
+7. Add any additional toppings as desired, such as salsa or avocado.
+8. Fold in the sides of each tortilla and then roll up tightly, tucking in the ends as you go.
+9. Serve the breakfast burritos immediately, or wrap in foil and keep warm in a low oven until ready to serve.
