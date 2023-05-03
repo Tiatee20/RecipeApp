@@ -12,7 +12,7 @@ A recipe app used to find food inspiration
 8. Make txt file for each recipe
 9. Make back button
 10. Create a separate window for each category
-11. Add images if possible
+11. Add images
 
 # Pseudocode
 from graphics import *
@@ -26,10 +26,10 @@ class Button:
 
 class RecipesWindow:
     def __init__(self, main_win):
-    #List all the recipe buttons and GraphWin
+    List all the recipe buttons and GraphWin
     
     def run(self):
-      #Makes the buttons work once clicked
+      Makes the buttons work once clicked
       
 def open_recipes_window(main_win):
     """Open a new window for the recipes."""
@@ -38,11 +38,11 @@ def open_recipes_window(main_win):
     
  class OpenRecipes:
     def __init__(self, main_win):
-    #list all the recipes 
+    List all the recipes 
 
 def breakfastWindow(main_win):
     """Open a new window for breakfast themed recipes."""
-    #Opens the breakfast recipes when run
+    Opens the breakfast recipes when run
     
  def lunchWindow(main_win):
     """Open a new window for lunch themed recipes."""
@@ -50,17 +50,17 @@ def breakfastWindow(main_win):
     
 def dinnerWindow(main_win):
   """Open a new window for dinner themed recipes."""
-    #Opens the dinner recipes when run
+    Opens the dinner recipes when run
    
 class addButton:
     def __init__(main_win):
-    #Makes the add button
+    Makes the add button
     
 def addWindow(main_win):
     """Open a new window for adding recipes."""
   
 def main():
-    # create the main window
+    create the main window
     win = GraphWin("Main Window", 300, 300)
 
     # title
