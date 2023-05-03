@@ -2,17 +2,17 @@
 A recipe app used to find food inspiration
 
 # To-Do List
-Create two recipes for each category 
-Create the Add button
-Create the app layout
-Create recipes button
-List title, ingredients, and directions for each recipe once a window is opened
-Make quit button
-Create categories breakfast, lunch, and dinner
-Make txt file for each recipe
-Make back button
-Create a separate window for each category
-Add images if possible
+1. Create two recipes for each category 
+2. Create the Add button
+3. Create the app layout
+4. Create recipes button
+5. List title, ingredients, and directions for each recipe once a window is opened
+6. Make quit button
+7. Create categories breakfast, lunch, and dinner
+8. Make txt file for each recipe
+9. Make back button
+10. Create a separate window for each category
+11. Add images if possible
 
 # Pseudocode
 from graphics import *
